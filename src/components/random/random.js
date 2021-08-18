@@ -13,6 +13,7 @@ import {
   AlertTitle,
   AlertDescription,
 } from "@chakra-ui/react";
+import Toast from "../toast/toast";
 
 const Random = () => {
   const [count, setCount] = useState(0);
@@ -20,13 +21,6 @@ const Random = () => {
 
   const randomHandler = () => {
     setCount(Math.floor(Math.random() * min));
-    if (count === 1 || 0) {
-      <Alert status="error">
-        <AlertIcon />
-        <AlertTitle mr={2}>error</AlertTitle>
-        <AlertDescription>what do you doing</AlertDescription>
-      </Alert>;
-    }
   };
 
   const ChangeHandler = (e) => {
@@ -35,6 +29,7 @@ const Random = () => {
 
   return (
     <div>
+      {min <= 1 ? <Toast /> : null}
       <ShowRandom count={count} />
       <div id="container">
         <NumberInput
