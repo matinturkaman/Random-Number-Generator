@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+#generate {
+    height: 40px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    background: #09A4DB;
+    color: whitesmoke;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#generate:focus {
+    animation-name: animateBtn;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@keyframes animateBtn {
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#number-input {
+    height: 23px;
+    padding: 8px 10px;
+    border: .5px solid #eebd52;
+    border-radius: 5px;
+    outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+#increment {
+    color: #eebd52;
+    transform: translateX(15px);
+    font-size: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#decrement {
+    color: #eebd52;
+    transform: translateX(15px);
+    font-size: 15px;
+}
+
+#container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#boxCount {
+    width: 300px;
+    height: 300px;
+    background: rgb(219, 219, 219);
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    color: #58f116;
+    border-radius: 5px;
+    background: #cbf0bc;
+    border: 1px solid#58f116;
 }
