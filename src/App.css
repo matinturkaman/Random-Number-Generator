@@ -71,14 +71,13 @@
 #boxCount {
     width: 300px;
     height: 300px;
-    background: rgb(219, 219, 219);
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 80px;
-    color: #58f116;
+    color: #1bff63;
     border-radius: 5px;
-    background: #cbf0bc;
-    border: 1px solid#58f116;
+    background: #c6f6d5;
+    border: 2px solid #1bff63;
 }
